@@ -14,7 +14,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # Load the trained model
 
-model = joblib.load('new_player_ratings_model.pkl')
+model = pickle.load('new_player_ratings_model.pkl')
 
 # Function to predict the rating
 def predict_rating(input_data):
